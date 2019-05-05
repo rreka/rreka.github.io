@@ -1,0 +1,17 @@
+.top-jumbotron  {
+  background-image: url("headerSite.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fbae17;
+}
+
+
+
+
+
+body {
+  min-height: 45rem;
+  background-image: url("headerSite.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
