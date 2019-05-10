@@ -14,171 +14,208 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+  <!-- js  -->
+  <script>
+    $('body').scrollspy({ target: '#navbar-page' })
+  </script>
+
   <title>Curriculum vitae | rogerreka.info</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-page" data-offset="0">
 
   <div class="jumbotron jumbo-cv bg-transparent mb-1 shadow-sm">
     <div class="container">
       <h1 class="display-4">Curriculum vitae</h1>
     </div>
   </div>
-    <div class="container">
+    <div class="container-fluid">
       <nav aria-label="breadcrumb mb-0">
       <ol class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">CV</li>
       </ol>
       </nav>
+
+
+  <div class="row">
+    <div class="col-lg-2">
+      <nav id="navbar-page" class="navbar navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Contents</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#volunteerExperience">Volunteer experience</a>
+          <a class="nav-link" href="#publications">Scholarly contributions</a>
+          <a class="nav-link" href="#service">Service</a>
+          <a class="nav-link" href="#skills">Skills</a>
+        </nav>
+      </nav>
     </div>
-    <div class="container-fluid bg-light">
-    <div class="container py-3">
-      <h3>Skip to</h3>
-      <a href="#education"><h5>Education</h5></a>
-      <a href="#experience"><h5>Experience</h5></a>
-      <a href="#volunteerExperience"><h5>Volunteer experience</h5></a>
-      <a href="#publications"><h5>Scholarly contributions</h5></a>
-      <a href="#"><h5>Service</h5></a>
-      <a href="#"><h5>Skills</h5></a>
+
+    <div class="col-10">
+      <div>
+        <h2 id="education">Education</h2>
+        <div class="row pb-3">
+          <div class="col-sm-6">
+            <h4>Master of Information
+              <small class="text-muted">Information Systems & Design; Library and Information Studies</small>
+            </h4>
+             2016-2018, University of Toronto
+          </div>
+          <div class="col-sm-6">
+            <h4>Bachelor of Science, Honours
+              <small class="text-muted">Biological Sciences and Psychology (with distinction)</small>
+            </h4>
+             2011-2016, University of Windsor
+          </div>
+        </div>
+
+        <h2 id="experience">Experience</h2>
+        <ul class="list-unstyled">
+          <li>
+            <h4>Science Data Librarian
+              <small class="text-muted">Leddy Library, University of Windsor</small>
+            </h4>
+             2018-present
+             <ul>
+               <li>Develop teaching and learning workshops and assignments for courses in biology, chemistry and computer science</li>
+               <li>Develop research data management guidance and documentation for researchers</li>
+               <li>Provide consultation on research data management practices to researchers</li>
+               <li>Promote library services to science faculty and students</li>
+               <li>Assessment and development of information resources for the sciences</li>
+               <li>In an acting role, provide general data reference</li>
+               <li>Committee work at the library, university and for the profession</li>
+             </ul>
+          </li>
+          <li>
+            <h4>Toronto Academic Libraries Intern
+              <small class="text-muted">Gerstein Science Information Centre, University of Toronto Libraries</small>
+            </h4>
+             2016-2018
+             <ul>
+               <li>Liaise with faculty and librarians to design and deliver instructional workshops for kinesiology courses and in-library sessions</li>
+               <li>Collaborate and consult on systematic and scoping reviews in health sciences by providing advice on search strategy and study methodology</li>
+               <li>Provide concise and thorough reference services through in-person, email, and Ask a Librarian platforms to the academic community</li>
+               <li>Develop learning resources to support library services such as LibGuides and video tutorials</li>
+             </ul>
+          </li>
+          <li>
+            <h4>Captain
+              <small class="text-muted">Canadian Armed Forces, Cadet Instructor Cadre</small>
+            </h4>
+             2013-present
+             <ul>
+               <li>Instruct on topics of leadership, citizenship and aviation</li>
+               <li>Manage a training program for the youth organization, including planning and leading adult staff</li>
+               <li>Produce communication products for distribution to external audiences</li>
+             </ul>
+          </li>
+          <li>
+            <h4>Teaching assistant
+              <small class="text-muted">University of Windsor</small>
+            </h4>
+             2014
+             <ul>
+               <li>Delivered parts of the course instruction</li>
+               <li>Developed students’ ability through one-on-one mentorship</li>
+               <li>Assisted in the assessment of the students</li>
+             </ul>
+          </li>
+        </ul>
+
+        <h2 id="volunteerExperience">Volunteer experience</h2>
+        <ul class="list-unstyled">
+          <li>
+            <h4>XXXXX
+              <small class="text-muted">XXXXXX</small>
+            </h4>
+             XXXX-XXXX
+             <ul>
+               <li>Phasellus iaculis neque</li>
+               <li>Purus sodales ultricies</li>
+               <li>Vestibulum laoreet porttitor sem</li>
+               <li>Ac tristique libero volutpat at</li>
+             </ul>
+          </li>
+          <li>
+            <h4>XXXXXX
+              <small class="text-muted">XXXXX</small>
+            </h4>
+             XXXX-XXXX
+             <ul>
+               <li>Phasellus iaculis neque</li>
+               <li>Purus sodales ultricies</li>
+               <li>Vestibulum laoreet porttitor sem</li>
+               <li>Ac tristique libero volutpat at</li>
+             </ul>
+          </li>
+          <li>
+            <h4>XXXX
+              <small class="text-muted">XXXXX</small>
+            </h4>
+             XXXX-XXXX
+             <ul>
+               <li>Phasellus iaculis neque</li>
+               <li>Purus sodales ultricies</li>
+               <li>Vestibulum laoreet porttitor sem</li>
+               <li>Ac tristique libero volutpat at</li>
+             </ul>
+          </li>
+          <li>
+            <h4>XXXXX
+              <small class="text-muted">XXXXXX</small>
+            </h4>
+             XXXX-XXXXX
+             <ul>
+               <li>Phasellus iaculis neque</li>
+               <li>Purus sodales ultricies</li>
+               <li>Vestibulum laoreet porttitor sem</li>
+               <li>Ac tristique libero volutpat at</li>
+             </ul>
+          </li>
+        </ul>
+        <h2 id="publications">Scholarly contributions</h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <h4>Peer-reviewed articles</h4>
+                <p class="hangingindent">Dugani, S. B., Melendez, A. P. A., <b>Reka, R.</b>, Hydoub, Y. M., McCafferty, S. N., Murad, M. H., … Mora, S. (2019). Risk factors associated with premature myocardial infarction: a systematic review protocol. <i>BMJ Open, 9</i>(2), e023647. <a href="https://doi.org/10.1136/bmjopen-2018-023647" target="_blank">https://doi.org/10.1136/bmjopen-2018-023647</a></p>
+                <p class="hangingindent">Perrier L., Blondal E., Ayala A.P., Dearborn D., Kenny T., Lightfoot D., <b>Reka R.</b>, Thuna M., Trimble L., & MacDonald H. (2017). Research data management in academic institutions: A scoping review. <i>PLoS ONE, 12</i>(5): e0178261. <a href="https://doi.org/10.1371/journal.pone.0178261" target="_blank">https://doi.org/10.1371/journal.pone.0178261</a></p>
+            </div>
+            <div class="col-sm-6">
+              <h4>Peer-reviewed abstracts</h4>
+                <p class="hangingindent">Geagea, A., <b>Reka, R.</b>, Siarkowski, M., Espinosa-Perez, L., Ayala, A., & Adhikari, N. (in press). Antimicrobial resistance and associated intervention in low- and middle-income country intensive care units: Scoping review. <i>Canadian Journal of Anesthesia.</i></p>
+                <p class="hangingindent">Alibhai, S.M., Jung, P., Alam, Z., Yeung, L., Malik, U., Syed, A.T., Rosario, C., Yokom, D., Rowbottom, L., Ayala, A.P., <b>Reka, R.</b>, & Puts, M. (2019). Delirium incidence, risk factors, and treatment in older adults receiving chemotherapy: A scoping review. <i>ASCO Annual Meeting.</i></p>
+            </div>
+          </div>
+          <h2 id="service">Service</h2>
+            <h4>Library</h4>
+            <ul>
+              <li>Member, Leddy Library Web Leadership Team <small class="text-muted">2019-present</small></li>
+              <li>Member, Leddy Library Digital Preservation Working Group <small class="text-muted">2019-present</small></li>
+              <li>Member, University Library Administrative Committee <small class="text-muted">2018-present</small></li>
+              <li>Member, Leddy Library Public Relations Committee <small class="text-muted">2018-present</small></li>
+              <li>Member, Gerstein Science Information Centre search committee for TALint intern <small class="text-muted">2018</small></li>
+            </ul>
+
+            <h4>University</h4>
+            <ul>
+              <li>Member, University of Windsor Data Analytics Solution and Review Working Group <small class="text-muted">2019-present</small></li>
+              <li>Member, University Research Data Management Working Group <small class="text-muted">2019-present</small></li>
+            </ul>
+
+            <h4>External</h4>
+            <ul>
+              <li>Member, Ontario Data Community, Ontario Council of University Libraries <small class="text-muted">2019-present</small></li>
+              <li>Member (acting), Data Liberation Initative <small class="text-muted">2019-present</small></li>
+              <li>Representative (acting), Inter-university Consortium for Political and Social Research <small class="text-muted">2019-present</small></li>
+            </ul>
+
+            <h2 id="skills">Skills</h2>
+      </div>
     </div>
   </div>
-
-  <div class="container py-3">
-    <h2 id="education">Education</h2>
-    <div class="row pb-3">
-      <div class="col-sm-6 pb-3">
-        <h4>Master of Information
-          <small class="text-muted">Information Systems & Design; Library and Information Studies</small>
-        </h4>
-         2016-2018, University of Toronto
-      </div>
-      <div class="col-sm-6">
-        <h4>Bachelor of Science, Honours
-          <small class="text-muted">Biological Sciences and Psychology (with distinction)</small>
-        </h4>
-         2011-2016, University of Windsor
-      </div>
-    </div>
-
-    <h2 id="experience">Experience</h2>
-    <ul class="list-unstyled">
-      <li>
-        <h4>Science Data Librarian
-          <small class="text-muted">Leddy Library, University of Windsor</small>
-        </h4>
-         2018-present
-         <ul>
-           <li>Develop teaching and learning workshops and assignments for courses in biology, chemistry and computer science</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-      <li>
-        <h4>Toronto Academic Libraries Intern
-          <small class="text-muted">Gerstein Science Information Centre, University of Toronto Libraries</small>
-        </h4>
-         2016-2018
-         <ul>
-           <li>Phasellus iaculis neque</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-      <li>
-        <h4>Captain
-          <small class="text-muted">Canadian Armed Forces, Cadet Instructor Cadre</small>
-        </h4>
-         2013-present
-         <ul>
-           <li>Phasellus iaculis neque</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-      <li>
-        <h4>Teaching assistant
-          <small class="text-muted">Faculty of Arts, Humanities and Social Sciences, University of Windsor</small>
-        </h4>
-         2013-present
-         <ul>
-           <li>Phasellus iaculis neque</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-    </ul>
-
-    <h2 id="volunteerExperience">Volunteer experience</h2>
-    <ul class="list-unstyled">
-      <li>
-        <h4>XXXXX
-          <small class="text-muted">XXXXXX</small>
-        </h4>
-         XXXX-XXXX
-         <ul>
-           <li>Phasellus iaculis neque</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-      <li>
-        <h4>XXXXXX
-          <small class="text-muted">XXXXX</small>
-        </h4>
-         XXXX-XXXX
-         <ul>
-           <li>Phasellus iaculis neque</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-      <li>
-        <h4>XXXX
-          <small class="text-muted">XXXXX</small>
-        </h4>
-         XXXX-XXXX
-         <ul>
-           <li>Phasellus iaculis neque</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-      <li>
-        <h4>XXXXX
-          <small class="text-muted">XXXXXX</small>
-        </h4>
-         XXXX-XXXXX
-         <ul>
-           <li>Phasellus iaculis neque</li>
-           <li>Purus sodales ultricies</li>
-           <li>Vestibulum laoreet porttitor sem</li>
-           <li>Ac tristique libero volutpat at</li>
-         </ul>
-      </li>
-    </ul>
-
-
-    <h2 id="publications">Scholarly contributions</h2>
-
-
-
-
-  </div>
-
-
-
-
-
-
-
+</div>
 
   <footer class="footer border-top">
   <div class="container">

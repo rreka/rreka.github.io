@@ -4,10 +4,12 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -31,4 +33,13 @@ body {
 
 footer p {
   margin-bottom: .25rem;
+}
+
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
+
+ul {
+  padding-bottom: 1rem;
 }
