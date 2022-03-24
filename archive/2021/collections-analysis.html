@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noindex" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Collections analysis | Portfolio | rogerreka.info</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-page" data-offset="0">
+  <div class="jumbotron jumbo-cv bg-transparent p-4 m-1 shadow-sm">
+    <div class="container">
+      <h1 class="display-4">Collections Analysis</h1>
+    </div>
+  </div>
+
+  <nav aria-label="breadcrumb mb-0">
+    <ol class="breadcrumb bg-light">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="portfolio.html">Portfolio</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Collections Analysis</li>
+    </ol>
+  </nav>
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-8">
+        <p>
+          As part of my collecitons responsibilities as a liaison librarian, I developed a data-driven process for electronic journal collections evaluation. In addition to the collections assessment using usage statistics, I have been evaluating the collection by looking at the journals researchers publish in and the journals that they cite. Using Python, I developed a tool that could automatically check and see if the journal is in the collection. This was work was presented at the 2019 Canadian Library Assessment Workshop.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-3">
+          <h6 class="card-header">
+            Access the project
+          </h6>
+          <div class="card-body">
+            <li class="card-text"><a href="https://github.com/rreka/Automating-collections-assessment" target="_blank">Project on GitHub</a></li>
+            <li class="card-text"><a href="https://github.com/rreka/CLAW-2019" target="_blank">CLAW 2019 workshop</a></li>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  <div class="row bg-light">
+    <div class="container my-3">
+      <div class="col-lg-12">
+        <h3>What happened</h3>
+        </p>As a liaison librarian at Leddy Library, I am responsible for many things for my departments: outreach, teaching, reference, data and research support, and collections. I am responsible for the monograph and serial collections for biology, biomedicine, chemistry & biochemistry and nursing — including selection, weeding, weighing in on consortial deal renewals, etc. The large number of responsibilities and duties leaves little time for in-depth and proactive collections management.</p>
+
+        <div class="card float-right m-3" style="width: 25rem;">
+          <a href="img/program.png">
+            <img src="img/program.png" class="card-img-top" alt="A slide from the intial workshop depicting the evidence synthesis method.">
+          </a>
+          <div class="card-body">
+            <small class="text-muted">A screenshot of a Python script that is automatically checking journal ISSNs against the library OpenURL link resolver.</small>
+          </div>
+        </div>
+
+        <p>Existing evaluation by librarians at UWindsor relied heavily on usage statistics provided by the vendor (when available) and personal judgement. Bibliometric approaches to collections evaluation, like those used in large-scale projects such as the Elsevier cancellation at the University of California, or the CRKN Journal Usage Project, use other metrics to evaluate electronic journals, such as the journals institutional researchers publish in and cite. Such metrics are available in some form from proprietary reports that universities can purchase, such as from 1Science (Elsevier) or from InCites (Clarivate Analytics), but the underlying data is available from the same citation indexes that many universities already subscribe to (e.g., Scopus, Web of Science). In this project, I sought to create these metrics programmatically by using existing citation indexes and open source data sources.</p>
+
+        <p>Using the API for Scopus, I was able to download all the publications by UWindsor biology faculty members. Refining this dataset, I can parse out bibliographic information for the journals that these publications were found in and create a list of authored journals. With the API, I also identified all the referenced sources, and after refining, a list of the cited journals. I wrote a script in Python to do this automatically and utilized the library link resolver to grab information about the library holdings for the journals. As a result, this project enabled me to identify what journals we subscribe to, which ones we don’t subscribe to, and which ones we have embargoed access to — for both journals published in and journals cited.
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container my-3">
+      <div class="col-lg-12">
+        <h3>So what?</h3>
+        <p>
+          This information, when used in conjunction with usage statistics and professional judgement, allow us to get deeper insight on the information needs of researchers in these departments. The data analysis techniques allow us to query specific questions and extend the scope of information provided by citation indexes or even the proprietary reports available for purchase. There are some limitations to the information from this report, however.
+        </p>
+
+        <p>
+          First and foremost, the data available to libraries through these APIs is somewhat restricted. Agreements with vendors for the citation indexes limit the type of data and metadata that we can get from the API. For example, the CRKN agreement with Elsevier for Scopus prohibits universities from accessing the complete metadata for references of articles. This means that we can’t get the ISSN, or even a complete title, for the cited journals, which makes the work much more difficult. Of course the data sources are not 100% comprehensive, so further work is also required to merge data from multiple citation indexes. Finally, the program in its current form cannot check print holdings, as they are not included in the link resolver.
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="row bg-light">
+    <div class="container my-3">
+      <div class="col-lg-12">
+        <h3>Next steps</h3>
+        <p>
+          The programs developed in this project are available as open source code on GitHub. The data analysis techniques and process were presented in a workshop at the 2019 Canadian Library Assessment Workshop and are also available openly on GitHub. To date, this information has been used at the time when journal packages are renewed. Looking to the future, I am working to develop a database to sort this data by packages in order to identify overlap of journal coverage between packages, to identify packages for further consideration. Using this information, I am also looking to write regular reports about the collection to faculty members, in order to keep the decision making transparent and to build communication.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer border-top">
+  <div class="container">
+    <span class="text-muted" align="center">
+      <p>© 2020 Roger Reka</p>
+    </span>
+  </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
