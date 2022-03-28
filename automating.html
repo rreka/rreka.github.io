@@ -35,40 +35,66 @@
 
   <div class="container">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus justo eu lorem posuere porttitor. Aliquam ut sollicitudin magna. Aenean arcu erat, aliquet et consequat sed, pulvinar ut neque. Vivamus lectus elit, maximus interdum urna eu, pulvinar ultrices mauris. Integer fringilla dolor arcu, et ultricies magna sollicitudin ac. Phasellus consectetur dapibus velit a condimentum. Nunc aliquam elementum quam, nec feugiat quam interdum sit amet. Cras rhoncus velit sit amet ipsum accumsan lacinia. Integer vel nisl eu ligula tincidunt scelerisque at sed orci. Donec consectetur sodales interdum. Quisque eget mollis quam, sit amet dapibus velit. Vivamus suscipit mollis venenatis.
+            Early in my career as a liaison librarian I set out to better understand what journals our researchers really needed. Through usage data we get a good sense of how our subscribed journals are used, but that alone is not the complete picture. This case study shows work that I have been doing to develop code to better support collections assessment with new data points and automation.
           </p>
         </div>
-        <div class="col-lg-4">
+    </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card mb-3">
+            <h6 class="card-header">
+              Themes
+            </h6>
+            <div class="card-body">
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-wand-magic-sparkles"></i></span>Emgering trends</li>
+                <li><span class="fa-li"><i class="fa-solid fa-flask"></i></span>Research</li>
+                <li><span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span>Resourcefulness</li>
+                <li><span class="fa-li"><i class="fa-solid fa-book-open"></i></span>Collections evaluation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
           <div class="card mb-3">
             <h6 class="card-header">
               Access the project
             </h6>
             <div class="card-body">
-              <li class="card-text"><a href="#" target="_blank">XXXX</a></li>
-              <li class="card-text"><a href="#" target="_blank">XXXX</a></li>
-              <li class="card-text"><a href="#" target="_blank">XXXX</a></li>
+              <li class="card-text"><a href="https://github.com/rreka/Automating-collections-assessment" target="_blank">Code that I have openly shared</a></li>
+              <li class="card-text"><a href="kinesiology-bibliometric-report.html" target="_blank">A dynamic report created for analysis of Kinesiology faculty member publications</a></li>
             </div>
           </div>
         </div>
-    </div>
+      </div>
+
   </div>
   <div class="row bg-light">
     <div class="container my-3">
       <div class="col-lg-12">
         <h3>What happened</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus justo eu lorem posuere porttitor. Aliquam ut sollicitudin magna. Aenean arcu erat, aliquet et consequat sed, pulvinar ut neque. Vivamus lectus elit, maximus interdum urna eu, pulvinar ultrices mauris. Integer fringilla dolor arcu, et ultricies magna sollicitudin ac. Phasellus consectetur dapibus velit a condimentum. Nunc aliquam elementum quam, nec feugiat quam interdum sit amet. Cras rhoncus velit sit amet ipsum accumsan lacinia. Integer vel nisl eu ligula tincidunt scelerisque at sed orci. Donec consectetur sodales interdum. Quisque eget mollis quam, sit amet dapibus velit. Vivamus suscipit mollis venenatis.
+          Before my days working in collections full-time, I worked as a liaison librarian. In that role I was responsible for many things for my departments: outreach, teaching, reference, data and research support, and collections. The large number of responsibilities and duties leaves little time for in-depth and proactive collections management.
         </p>
-        <div class="card float-right m-3" style="width: 20rem;">
-          <a href="img/pop.jpg">
-            <img src="img/pop.jpg" class="card-img-top" alt="...">
+        <div class="card float-right m-3" style="width: 40rem;">
+          <a href="img/analysis.png">
+            <img src="img/analysis.png" class="card-img-top" alt="...">
           </a>
           <div class="card-body">
-            <small class="text-muted">XXXXXXX</small>
+            <small class="text-muted">A historgram showing the distribution of the top-100 journals cited by UWindsor kinesiology faculty members, grouped by full-text availability.</small>
           </div>
         </div>
+        <p>
+          Common practice for evaluations relied heavily on usage data provided by the vendor (when available), consultation and personal judgement. Bibliometric approaches to collections evaluation, like those used in large-scale projects such as the Elsevier cancellation at the University of California, or the CRKN Journal Usage Project, use other metrics to evaluate electronic journals. These include data points such as identifying which journals the campus author’s publish and cite. Such metrics are available in some form from proprietary reports that universities can purchase, such as from 1Science (Elsevier) or from InCites (Clarivate Analytics), but the underlying data is available from the same citation indexes that many universities already subscribe to (e.g., Scopus, Web of Science). In this project, I sought to create these metrics programmatically by using existing citation indexes and open source data sources.
+        </p>
+        <p>
+          Using the API for Scopus, a resource we already subscribed to, I was able to download all the publications by UWindsor faculty members. Refining this dataset, I can parse out bibliographic information for the journals and create a list of authored journals. With the API, I also identified all the referenced sources from the articles, and after refining, a list of the cited journals. I wrote a script in Python to do this automatically and utilized the API for the library link resolver to grab information about the library holdings for the journals. As a result, this project enabled me to identify what journals we subscribe to, which ones we don’t subscribe to, and which ones we have embargoed access to — for both journals published in and journals cited.
+        </p>
+        <p>
+          Leveraging Jupyter Notebooks, free and open source software, I created dynamic reports for different subject areas. I offered to create reports for any of my colleagues who were interested. I also openly shared the code with librarian colleagues across Canada and the U.S., presenting this at conferences. Librarians have been interested in my methodology and I’ve been invited to present this at McMaster Library and to consult on this process.
+        </p>
       </div>
     </div>
   </div>
@@ -77,8 +103,20 @@
       <div class="col-lg-12">
         <h3>So what?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus justo eu lorem posuere porttitor. Aliquam ut sollicitudin magna. Aenean arcu erat, aliquet et consequat sed, pulvinar ut neque. Vivamus lectus elit, maximus interdum urna eu, pulvinar ultrices mauris. Integer fringilla dolor arcu, et ultricies magna sollicitudin ac. Phasellus consectetur dapibus velit a condimentum. Nunc aliquam elementum quam, nec feugiat quam interdum sit amet. Cras rhoncus velit sit amet ipsum accumsan lacinia. Integer vel nisl eu ligula tincidunt scelerisque at sed orci. Donec consectetur sodales interdum. Quisque eget mollis quam, sit amet dapibus velit. Vivamus suscipit mollis venenatis.
-        </p>
+        An advantage of this new methodology for collections assessment is that librarians can glean insights that they would not otherwise get without paying extra for them. My approach only requires librarians to use resources they already have, and it is possible to adapt this to open access data sources as well (e.g., PubMed, MS Academic).
+      </p>
+      <p>
+        This information, when used in conjunction with usage statistics, consultation with users, and professional judgement, allow us to get deeper insight on the information needs of researchers in these departments. The data analysis techniques allow us to query specific questions and extend the scope of information provided by citation indexes or even the proprietary reports available for purchase.
+      </p>
+      <p>
+        I have used this information to inform evaluations of specific e-resources. It can provide us with details on what titles to keep and which to cancel. This is especially helpful when evaluating  journal aggregator resources, such as JSTOR and Academic Search Complete, where we likely have a lot of overlap with other subscribed resources. In these cases, it can be difficult to do an overlap analysis on thousands of titles within dozens of different packages, but using this code to automatically query the link resolver and get publication and reference data on journals saves a lot of time in identifying which packages are most needed.
+      </p>
+      <p>
+        The code is also helpful for list checking, which is useful for producing collections reports in support of university IQAP reviews. I have used this method to automatically compare the top-50 journals in various subject areas to see what coverage the library can provide. IQAP reviewers appreciate having this information and is often a good starting point for communicating how the library supports research, teaching, and learning.
+      </p>
+      <p>
+        I’ve continued this work over the years and have shared my progress and code with other librarians in the field. These colleagues have appreciated this work and see me as a point of expertise on these matters. Over the last couple of years, I have provided expertise to other librarians and consortial staff on producing similar insights at their institutions. Personally, this is beneficial as well as I have built a strong network of colleagues across Canada that I can turn to for advice on e-resources management and evaluation. Because of my experience through this work, I have become more knowledgeable with citation indexes and research metrics, and have been able to collaborate with staff at the university’s institutional analysis office to work on projects that support the university’s efforts in research analysis.
+      </p>
       </div>
     </div>
   </div>
@@ -87,7 +125,13 @@
       <div class="col-lg-12">
         <h3>Next steps</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus justo eu lorem posuere porttitor. Aliquam ut sollicitudin magna. Aenean arcu erat, aliquet et consequat sed, pulvinar ut neque. Vivamus lectus elit, maximus interdum urna eu, pulvinar ultrices mauris. Integer fringilla dolor arcu, et ultricies magna sollicitudin ac. Phasellus consectetur dapibus velit a condimentum. Nunc aliquam elementum quam, nec feugiat quam interdum sit amet. Cras rhoncus velit sit amet ipsum accumsan lacinia. Integer vel nisl eu ligula tincidunt scelerisque at sed orci. Donec consectetur sodales interdum. Quisque eget mollis quam, sit amet dapibus velit. Vivamus suscipit mollis venenatis.
+          What started as a question from my liaison days has turned into an area of professional and research focus for me. I am interested in developing new programmatic methods for collections analysis, and have been expanding on this work. My immediate goals are to produce dynamic dashboards of this data for liaison librarians, so that my colleagues can find this information when they need it. I am working with the institutional analysis office to source regular data on campus researchers in order to produce these dashboards.
+        </p>
+        <p>
+          I have also identified another problem that could benefit from a programmatic approach. Often, vendors bundle their resources into multiple packages (e.g., subject packages). In many cases, Leddy Library subscribes to the complete offering of titles, even though the usage is concentrated within a smaller subset of titles. Vendors know this, and price their packages and individual titles accordingly. This puts libraries at an information disadvantage when negotiating.
+        </p>
+        <p>
+          Soon, I am planning on developing new code that can determine the most efficient combination of titles or packages, balancing cost and usage. To put this into context, CAIRN (a publisher of francophone journals) offers 12 subject packages of journals with varying degrees of overlap. From these 12 packages there are 4095 different possible combinations of packages, which makes it nearly impossible to determine the best combination for a library. The results of this analysis would provide us with the best possible package combinations to explore for subscription, providing us with useful information when negotiating with the vendor.
         </p>
       </div>
     </div>
